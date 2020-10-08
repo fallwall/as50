@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## npm package used
+
+Material UI Image
+https://github.com/TeamWertarbyte/material-ui-image/blob/v3.1.0/README.md
+
 ## Available Scripts
 
 In the project directory, you can run:

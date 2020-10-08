@@ -1,0 +1,44 @@
+{
+  "images": [
+    {
+      "id": 0,
+      "caption": "Ari.",
+      "url": "https://i.imgur.com/TvFHV9s.jpg"
+    },
+    {
+      "id": 1,
+      "caption": "Ari Working.",
+      "url": "https://i.imgur.com/nk0wPc1.jpg"
+    },
+    {
+      "id": 2,
+      "caption": "Ari Eyes Closed.",
+      "url": "https://i.imgur.com/7zFky9d.jpg"
+    },
+    {
+      "id": 3,
+      "caption": "Ari Laughing.",
+      "url": "https://i.imgur.com/a3EpBhn.jpg"
+    },
+    {
+      "id": 4,
+      "caption": "Ari Eating Popeyes at a Walmart Parking Lot.",
+      "url": "https://i.imgur.com/et7ctZH.jpg"
+    },
+    {
+      "id": 5,
+      "caption": "Ari Sleeping.",
+      "url": "https://i.imgur.com/gd9FVCe.jpg"
+    },
+    {
+      "id": 6,
+      "caption": "Ari at Driving Range.",
+      "url": "https://i.imgur.com/NAtmSkS.jpg"
+    },
+    {
+      "id": 7,
+      "caption": "Ari with Sammi.",
+      "url": "https://i.imgur.com/iDOhkwb.jpg"
+    }
+  ]
+}
