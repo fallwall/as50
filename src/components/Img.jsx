@@ -6,6 +6,8 @@ export default function Img({ children }) {
     <div>
       <Image
         src={children.url}
+        aspectRatio={children.width > children.height ? 3 / 2 : 2 / 3}
+        animationDuration={5000}
       />
     </div>
   )
