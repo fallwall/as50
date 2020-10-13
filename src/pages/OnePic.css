@@ -1,0 +1,11 @@
+/* .one-pic-frame {
+  height: 20px;
+} */
+
+.one-pic {
+
+}
+
+.one-pic-frame img {
+  object-fit: cover;
+}

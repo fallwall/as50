@@ -3,11 +3,12 @@ import Img from '../components/Img';
 import ShuffleIcon from '@material-ui/icons/Shuffle';
 import MoreIcon from '@material-ui/icons/More';
 import data from '../data/images.json';
+import './OnePic.css';
 
-const current = Math.floor(Math.random() * data.images.length);
+const init = Math.floor(Math.random() * data.images.length);
 
 export default function OnePic() {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(init);
   return (
     <div className="one-pic">
       <Img>{data.images[current]}</Img>

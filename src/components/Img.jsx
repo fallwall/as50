@@ -2,11 +2,13 @@ import React from 'react';
 import Image from 'material-ui-image';
 
 export default function Img({ children }) {
+  
+  console.log(children.url);
   return (
-    <div>
+    <div className="one-pic-frame">
       <Image
         src={children.url}
-        aspectRatio={children.width > children.height ? 3 / 2 : 2 / 3}
+        aspectRatio={children.url.width > children.url.height ? (117/83) : (83/117)}
         animationDuration={5000}
       />
     </div>
