@@ -6,6 +6,7 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import data from '../data/images.json';
+import './AllPics.css';
 
 const tileData = data.images;
 
@@ -14,19 +15,19 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
-    overflow: 'hidden',
+    // overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
   },
   gridList: {
-    width: 500,
-    height: 450,
+    width: '90%',
+    // height: 900,
   },
 }));
 
 export default function AllPics() {
   const classes = useStyles();
   return (
-    <div>
+    <div className="all-pics">
       <div className={classes.root}>
         <GridList cellHeight={160} className={classes.gridList} cols={3}>
           {tileData.map((tile) => (
