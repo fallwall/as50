@@ -20,6 +20,7 @@ export default function Nav() {
       <div className="overlay" id={overlay ? "myNav" : "myNavHidden"}>
         <a href="javascript:void(0)" className="closebtn" onClick={() => setOverlay(!overlay)}>&times;</a>
         <div className="overlay-content">
+          <a href="/">Home</a>
           <a href="/about">About</a>
           <a href="/all">All</a>
           <a href="#">Contact</a>
