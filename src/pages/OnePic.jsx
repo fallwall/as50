@@ -24,8 +24,10 @@ export default function OnePic() {
             </div>
         </div>
         <div className="icon-all">
+          <a href="/all">
           <MoreIcon fontSize="large" />
-          <div><h2>All</h2></div>
+            <div><h2>All</h2></div>
+          </a>
         </div>
       </div>
     </div>
