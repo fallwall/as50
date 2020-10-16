@@ -6,10 +6,15 @@
   z-index:99;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   width: 50%;
+}
+
+.nav-right {
+  margin-right: 5%;
 }
 
 /* overlay */

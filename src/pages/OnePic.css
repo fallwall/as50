@@ -9,3 +9,12 @@
 .one-pic-frame img {
   object-fit: cover;
 }
+
+.icon {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  z-index:99;
+}

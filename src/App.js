@@ -15,7 +15,7 @@ function App() {
       <Route path="/" exact render={() => <OnePic />} />
       <Route path="/all" render={() => <AllPics />} />
       <Route path="/about" render={() => <About />} />
-      <Route path="/trail" render={() => <Trail />} />
+      <Route path="/field2020" render={() => <Trail />} />
       <Route path="/contact" render={() => <Contact />} />
     </div>
   );

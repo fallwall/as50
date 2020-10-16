@@ -11,7 +11,7 @@ export default function Nav() {
           <img src={as} className="logo" alt="logo" />
         </div>
         <div className="nav-right">
-          <span style={{ fontSize: "30px", cursor: "pointer" }}
+          <span style={{ fontSize: "3em", cursor: "pointer" }}
             onClick={() => setOverlay(!overlay)}>
             &#9776;
             </span>
@@ -23,7 +23,7 @@ export default function Nav() {
           <a href="/">Home</a>
           <a href="/about">Ari Who</a>
           <a href="/all">Gallery</a>
-          <a href="/trail">Trail</a>
+          <a href="/field2020">Field Day 2020</a>
           <a href="/contact">Contact</a>
         </div>
       </div>
