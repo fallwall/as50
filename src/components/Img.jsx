@@ -8,8 +8,9 @@ export default function Img({ children }) {
     <div className="one-pic-frame">
       <Image
         src={children.url}
-        aspectRatio={children.url.width > children.url.height ? (117/83) : (83/117)}
+        aspectRatio={children.url.width > children.url.height ? (117 / 83) : (83 / 117)}
         animationDuration={5000}
+        // style={{height: "40vh"}}
       />
     </div>
   )
