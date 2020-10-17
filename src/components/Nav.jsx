@@ -12,6 +12,7 @@ export default function Nav() {
         </div>
         <div className="nav-right">
           <span style={{ fontSize: "3em", cursor: "pointer" }}
+            className="clickable"
             onClick={() => setOverlay(!overlay)}>
             &#9776;
             </span>

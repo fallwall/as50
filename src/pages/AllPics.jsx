@@ -12,10 +12,8 @@ import './AllPics.css';
 /* Randomize array in-place using Durstenfeld shuffle algorithm */
 const shuffle=(arr)=> {
   for (let i = arr.length - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1));
-      let temp = arr[i];
-      arr[i] = arr[j];
-      arr[j] = temp;
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   return arr;
 }
