@@ -13,7 +13,7 @@ export default function OnePic() {
     <div className="one-pic">
       <Img>{data.images[current]}</Img>
       <div className="icon">
-        <div className="icon-next clickable">
+        <div className="icon1 clickable">
           <ShuffleIcon
             fontSize="large"
             onClick={() => setCurrent(Math.floor(Math.random() * data.images.length))}
@@ -23,7 +23,7 @@ export default function OnePic() {
             <h2>Next</h2>
             </div>
         </div>
-        <div className="icon-all">
+        <div className="icon2">
           <a href="/all">
           <MoreIcon fontSize="large" />
             <div><h2>All</h2></div>
