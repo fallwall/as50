@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
@@ -37,9 +38,11 @@ export default function AllPics() {
                 title={tile.id + 1}
                 subtitle={<span>{tile.caption}</span>}
                 actionIcon={
-                  <IconButton aria-label={`info about ${tile.title}`} className={classes.icon}>
-                    <FavoriteBorderIcon />
-                  </IconButton>
+                  <Link to={`/download/${tile.id}`}>
+                    <IconButton aria-label={`info about ${tile.title}`} className={classes.icon}>
+                      <FavoriteBorderIcon />
+                    </IconButton>
+                  </Link>
                 }
               />
             </GridListTile>
