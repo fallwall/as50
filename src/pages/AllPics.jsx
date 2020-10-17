@@ -44,7 +44,7 @@ export default function AllPics() {
             <GridListTile key={tile.id} cols={tile.cols || 1}>
               <img src={tile.url} alt={tile.caption} />
               <GridListTileBar
-                title={tile.id + 1}
+                title={tile.id > 8? tile.id + 1 : `0${tile.id + 1 }`}
                 subtitle={<span>{tile.caption}</span>}
                 actionIcon={
                   <Link to={`/download/${tile.id}`}>
