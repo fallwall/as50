@@ -9,7 +9,18 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import data from '../data/images.json';
 import './AllPics.css';
 
-const tileData = data.images;
+/* Randomize array in-place using Durstenfeld shuffle algorithm */
+const shuffle=(arr)=> {
+  for (let i = arr.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      let temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+  }
+  return arr;
+}
+
+const tileData = shuffle(data.images);
 
 const useStyles = makeStyles((theme) => ({
   root: {
