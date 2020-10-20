@@ -2,15 +2,16 @@ import React from 'react';
 import Image from 'material-ui-image';
 
 export default function Img({ children }) {
-  
+
+  console.log(process.env.PUBLIC_URL);
   console.log(children.url);
   return (
     <div className="one-pic-frame">
       <Image
-        src={children.url}
-        aspectRatio={children.url.width > children.url.height ? (117 / 83) : (83 / 117)}
+        src={process.env.PUBLIC_URL+`/assets${children.url}`}
+        aspectRatio={1/1}
         animationDuration={5000}
-        // style={{height: "40vh"}}
+        imageStyle={{ width: '50%', height: '50%' }}
       />
     </div>
   )

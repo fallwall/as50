@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import as from './arishack.svg';
 import './Nav.css';
 
@@ -20,12 +21,12 @@ export default function Nav() {
       </div>
       <div className="overlay" id={overlay ? "myNav" : "myNavHidden"}>
         <a href="javascript:void(0)" className="closebtn" onClick={() => setOverlay(!overlay)}>&times;</a>
-        <div className="overlay-content">
-          <a href="/">Home</a>
-          <a href="/about">Ari Who</a>
-          <a href="/all">Gallery</a>
-          <a href="/field2020">Field Day 2020</a>
-          <a href="/contact">Contact</a>
+        <div className="overlay-content" onClick={() => setOverlay(!overlay)}>
+          <Link to="/">Home</Link>
+          <Link to="/about">Ari Who</Link>
+          <Link to="/all">Gallery</Link>
+          <Link to="/field2020">Field Day 2020</Link>
+          <Link to="/contact">Contact</Link>
         </div>
       </div>
 

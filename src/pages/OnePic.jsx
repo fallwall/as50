@@ -1,36 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Img from '../components/Img';
-import ShuffleIcon from '@material-ui/icons/Shuffle';
-import MoreIcon from '@material-ui/icons/More';
-import data from '../data/images.json';
+import OnePicFront from '../components/OnePicFront';
+import OnePicDownload from '../components/OnePicDownload';
+import images from '../data/images';
 import './OnePic.css';
 
-const init = Math.floor(Math.random() * data.images.length);
-
-export default function OnePic() {
-  const [current, setCurrent] = useState(init);
+const OnePic = (props) => {
   return (
     <div className="one-pic">
-      <Img>{data.images[current]}</Img>
-      <div className="icon">
-        <div className="icon1 clickable">
-          <ShuffleIcon
-            fontSize="large"
-            onClick={() => setCurrent(Math.floor(Math.random() * data.images.length))}
-          />
-          <div
-            onClick={() => setCurrent(Math.floor(Math.random() * data.images.length))}>
-            <h2>Next</h2>
-            </div>
-        </div>
-        <div className="icon2">
-          <a href="/all">
-          <MoreIcon fontSize="large" />
-            <div><h2>All</h2></div>
-          </a>
-        </div>
-      </div>
+      <Img>{props.isFrontPage? images[props.current]: images[props.download_id]}</Img>
+      {props.isFrontPage ? <OnePicFront
+        shuffleCurrent={props.shuffleCurrent}
+      />
+        :
+        <OnePicDownload
+          download_id={props.download_id}
+        />}
     </div>
-
   )
 }
+
+export default OnePic;
