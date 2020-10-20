@@ -14,6 +14,7 @@ const App = () => {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const init = Math.floor(Math.random() * TOTAL_IMAGES);
     setCurrent(init);
   }, []);
