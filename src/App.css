@@ -13,14 +13,11 @@
   color: #929191;
 }
 
+.one-pic-frame {
+  overflow: hidden;
+}
 .one-pic-frame img {
   object-fit: cover;
   margin-left: 20%;
-  margin-top: 12%;
+  margin-top: 100px;
 }
-
-/* @media only screen and (max-width: 1500px) {
-  .one-pic-frame img  {
-    margin-top: 50%;
-  }
-} */

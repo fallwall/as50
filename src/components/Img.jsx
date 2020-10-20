@@ -8,8 +8,8 @@ export default function Img({ children }) {
   return (
     <div className="one-pic-frame">
       <Image
-        src={process.env.PUBLIC_URL+`/assets${children.url}`}
-        aspectRatio={1/1}
+        src={process.env.PUBLIC_URL + `/assets${children.url}`}
+        aspectRatio={1 / 1}
         animationDuration={5000}
         imageStyle={{ width: '50%', height: '50%' }}
       />

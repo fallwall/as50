@@ -1,10 +1,10 @@
 /* .one-pic-frame {
   height: 90vh;
-}
+}*/
 
 .one-pic {
-  margin-top: -1%;
-} */
+  overflow-y: hidden;
+} 
 
 
 .icon {

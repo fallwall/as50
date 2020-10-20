@@ -9,7 +9,7 @@ export default function Nav() {
     <>
       <div className="nav">
         <div className="nav-left">
-          <img src={as} className="logo" alt="logo" />
+          <Link to="/"><img src={as} className="logo" alt="logo" /></Link>
         </div>
         <div className="nav-right">
           <span style={{ fontSize: "3em", cursor: "pointer" }}
