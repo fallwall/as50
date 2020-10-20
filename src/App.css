@@ -21,3 +21,9 @@
   margin-left: 20%;
   margin-top: 100px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .one-pic-frame img {
+    margin-top: 10%;
+  }
+}
