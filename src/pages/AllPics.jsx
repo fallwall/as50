@@ -31,7 +31,7 @@ export default function AllPics() {
         <GridList cellHeight={160} className={classes.gridList} cols={3}>
           {images.map((tile) => (
             <GridListTile key={tile.id} cols={tile.cols || 1}>
-              <img src={process.env.PUBLIC_URL+`/assets${tile.url}`} alt={tile.caption} />
+              <img src={process.env.PUBLIC_URL + `${tile.url}`} alt={tile.caption} />
               <Link to={`/download/${tile.id}`}>
                 <GridListTileBar
                   title={tile.id > 8 ? tile.id + 1 : `0${tile.id + 1}`}
