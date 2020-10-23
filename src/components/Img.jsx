@@ -22,7 +22,7 @@ export default function Img({ children }) {
       <Image
         src={process.env.PUBLIC_URL + `${children.url}`}
         animationDuration={5000}
-        imageStyle={width < 640 ? { marginLeft: '0', width: '100%', height: '100%' } : { width: '50%', height: '50%' }}
+        imageStyle={width < 800 ? { marginLeft: '0', width: '100%', height: '100%' } : { width: '50%', height: '50%' }}
       />
     </div>
   )
