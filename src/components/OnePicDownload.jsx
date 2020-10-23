@@ -7,22 +7,22 @@ import images from '../data/images';
 export default function OnePicDownload(props) {
   return (
     <div className="icon">
-      <a href={process.env.PUBLIC_URL+`/assets${images[props.download_id].url}`} download>
+      <a href={process.env.PUBLIC_URL + `${images[props.download_id].url}`} download>
         <div className="icon1 clickable">
           <GetAppIcon
             fontSize="large"
           />
           <div>
             <h2>Download</h2>
+          </div>
         </div>
-        </div>
-        </a>
-        <div className="icon2">
-          <Link to="/all">
-            <MoreIcon fontSize="large" />
-            <div><h2>All</h2></div>
-          </Link>
-        </div>
+      </a>
+      <div className="icon2">
+        <Link to="/all">
+          <MoreIcon fontSize="large" />
+          <div><h2>All</h2></div>
+        </Link>
       </div>
+    </div>
   )
 }
