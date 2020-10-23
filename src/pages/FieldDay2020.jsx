@@ -8,7 +8,7 @@ export default function FieldDay2020() {
   return (
     <div className="field-day">
       <ImageScroller>
-        {images.map(e => <img src={process.env.PUBLIC_URL + `${e.url}`} alt="First" />)}
+        {images.map(e => <img key={e.id} src={process.env.PUBLIC_URL + `${e.url}`} alt={e.title} />)}
       </ImageScroller>
     </div>
   )
