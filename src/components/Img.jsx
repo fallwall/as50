@@ -8,7 +8,7 @@ export default function Img({ children }) {
   return (
     <div className="one-pic-frame">
       <Image
-        src={process.env.PUBLIC_URL + `/assets${children.url}`}
+        src={process.env.PUBLIC_URL + `${children.url}`}
         animationDuration={5000}
         imageStyle={{ width: '50%', height: '50%' }}
       />

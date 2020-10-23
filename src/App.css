@@ -22,8 +22,15 @@
   margin-top: 100px;
 }
 
+.field-day {
+  margin-top: 130px;
+}
+
 @media only screen and (max-width: 1024px) {
   .one-pic-frame img {
-    margin-top: 10%;
+    margin-top: 15%;
+  }
+  .field-day {
+    margin-top: 15%;
   }
 }

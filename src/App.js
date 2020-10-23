@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 import OnePic from './pages/OnePic';
 import AllPics from './pages/AllPics';
 import About from './pages/About';
-import Trail from './pages/Trail';
+import FieldDay2020 from './pages/FieldDay2020';
 import Contact from './pages/Contact';
 import Nav from './components/Nav';
 import './App.css';
@@ -36,7 +36,7 @@ const App = () => {
       />
       <Route path="/all" render={() => <AllPics />} />
       <Route path="/about" render={() => <About />} />
-      <Route path="/field2020" render={() => <Trail />} />
+      <Route path="/field2020" render={() => <FieldDay2020 />} />
       <Route path="/contact" render={() => <Contact />} />
       <Route path="/download/:id" render={(props) =>
         <OnePic
