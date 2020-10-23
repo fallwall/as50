@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import Image from 'material-ui-image';
 
 export default function Img({ children }) {
@@ -10,8 +10,9 @@ export default function Img({ children }) {
     setHeight(window.innerHeight);
   }
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.addEventListener('resize', () => { updateWindowDimensions(); });
+    updateWindowDimensions();
     return () => {
       window.removeEventListener('resize', () => { updateWindowDimensions(); })
     }
